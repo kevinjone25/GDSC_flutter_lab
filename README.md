@@ -1,7 +1,3 @@
-# dinner_decide
-
-Maybe a unreachable project
-
 ## Getting Started
 
 This project is a starting point for a Flutter application.

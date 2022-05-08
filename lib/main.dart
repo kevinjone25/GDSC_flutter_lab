@@ -89,11 +89,6 @@ class MyApp extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: const FloatingActionButton(
-        tooltip: 'Add', // used by assistive technologies
-        child: Icon(Icons.add),
-        onPressed: null,
-      ),
     );
   }
 }
