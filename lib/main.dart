@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const MaterialApp(
+      title: 'Flutter Tutorial',
+      home: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -10,65 +14,86 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Name Generator'),
-        ),
-        body: const Center(
-          child: RandomWords(),
-        ),
-      ),
-    );
-  }
-}
-
-class RandomWords extends StatefulWidget {
-  const RandomWords({Key? key}) : super(key: key);
-
-  @override
-  State<RandomWords> createState() => _RandomWordsState();
-}
-
-class _RandomWordsState extends State<RandomWords> {
-  final _suggestions = <WordPair>[];
-  final _biggerFont = const TextStyle(fontSize: 18.0);
-
-  @override
-  Widget build(BuildContext context) {
+    // Scaffold is a layout for
+    // the major Material Components.
     return Scaffold(
+      backgroundColor: Colors.grey[800],
       appBar: AppBar(
-        title: const Text('Startup Name Generator'),
+        title: const Text('idisused'),
+        centerTitle: true,
+        backgroundColor: Colors.grey[900],
+        elevation: 0,
       ),
-      body: _buildSuggestions(),
-    );
-  }
-
-  Widget _buildRow(WordPair pair) {
-    return ListTile(
-      title: Text(
-        pair.asPascalCase,
-        style: _biggerFont,
+      // body is the majority of the screen.
+      body: Padding(
+        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/star.png'),
+                radius: 50.0,
+              ),
+            ),
+            Divider(
+              height: 80,
+              thickness: 2,
+              color: Colors.grey[500],
+            ),
+            Text('NAME',
+                style: TextStyle(
+                    color: Colors.grey,
+                    letterSpacing: 2,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold)),
+            SizedBox(height: 10),
+            Text('Yuan-Xheng',
+                style: TextStyle(
+                    color: Colors.amber[300],
+                    letterSpacing: 2,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold)),
+            SizedBox(height: 30.0),
+            Text('INTRO',
+                style: TextStyle(
+                    color: Colors.grey,
+                    letterSpacing: 2,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold)),
+            SizedBox(height: 10),
+            Text('我是一條雜魚',
+                style: TextStyle(
+                    color: Colors.amber[300],
+                    letterSpacing: 2,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold)),
+            SizedBox(height: 30.0),
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
       ),
-    );
-  }
-
-  Widget _buildSuggestions() {
-    return ListView.builder(
-      padding: const EdgeInsets.all(16.0),
-      itemBuilder: (context, i) {
-        if (i.isOdd) {
-          return Divider();
-        }
-
-        final index = i ~/ 2;
-
-        if (index >= _suggestions.length) {
-          _suggestions.addAll(generateWordPairs().take(10));
-        }
-        return _buildRow(_suggestions[index]);
-      },
+      floatingActionButton: const FloatingActionButton(
+        tooltip: 'Add', // used by assistive technologies
+        child: Icon(Icons.add),
+        onPressed: null,
+      ),
     );
   }
 }
