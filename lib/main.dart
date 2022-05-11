@@ -26,11 +26,11 @@ class MyApp extends StatelessWidget {
       ),
       // body is the majority of the screen.
       body: Padding(
-        padding: EdgeInsets.fromLTRB(30, 40, 30, 0),
+        padding: const EdgeInsets.fromLTRB(30, 40, 30, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Center(
+            const Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/star.png'),
                 radius: 50.0,
@@ -41,41 +41,41 @@ class MyApp extends StatelessWidget {
               thickness: 2,
               color: Colors.grey[500],
             ),
-            Text('NAME',
+            const Text('NAME',
                 style: TextStyle(
                     color: Colors.grey,
                     letterSpacing: 2,
                     fontSize: 18,
                     fontWeight: FontWeight.bold)),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text('Yuan-Xheng',
                 style: TextStyle(
                     color: Colors.amber[300],
                     letterSpacing: 2,
                     fontSize: 25,
                     fontWeight: FontWeight.bold)),
-            SizedBox(height: 30.0),
-            Text('INTRO',
+            const SizedBox(height: 30.0),
+            const Text('INTRO',
                 style: TextStyle(
                     color: Colors.grey,
                     letterSpacing: 2,
                     fontSize: 18,
                     fontWeight: FontWeight.bold)),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Text('我是一條雜魚',
                 style: TextStyle(
                     color: Colors.amber[300],
                     letterSpacing: 2,
                     fontSize: 25,
                     fontWeight: FontWeight.bold)),
-            SizedBox(height: 30.0),
+            const SizedBox(height: 30.0),
             Row(
               children: <Widget>[
-                Icon(
+                const Icon(
                   Icons.email,
                   color: Colors.grey,
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Text(
                   'fish@example.edu.tw',
                   style: TextStyle(
@@ -85,7 +85,296 @@ class MyApp extends StatelessWidget {
                   ),
                 )
               ],
-            )
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                const Icon(
+                  Icons.email,
+                  color: Colors.grey,
+                ),
+                const SizedBox(width: 10),
+                Text(
+                  'fish@example.edu.tw',
+                  style: TextStyle(
+                    color: Colors.grey[300],
+                    fontSize: 18,
+                    letterSpacing: 1,
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
